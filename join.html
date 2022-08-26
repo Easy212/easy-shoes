@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ko"> <!--기본언어 설정-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="JiHoon Lee"> <!--홈페이지 제작자-->
+    <meta name="keywords" content="Drow, 신발, 조던, 덩크, 한정판 스니커즈"> <!--검색엔진을 통한 키워드 (대략적인 사이트 정보)-->
+    <meta name="description" content="Easy shoes의 회원가입 화면"> <!--홈페이지의 대략적인 설명(요약정보)-->
+    <meta name="robots" content="all"> <!--검색엔진을 통한 노출설정(all = 전부)-->
+    <link rel="shortcut icon" href="img/mainlogo.png"> <!--파비콘 지정(타이틀과 함께 노출되는 이미지)-->
+    <link rel="stylesheet" href="css/normalize.css"> <!--css 초기화(옛날버전 > 기본값으로 초기화/인터넷에서 초기화 css다운가능)-->
+    <link rel="stylesheet" href="css/common.css"> <!--메인 페이지와 서브페이지 공통적으로 사용할 스타일(css) 연결-->
+    <link rel="stylesheet" href="css/join.css"> 
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/common.js"></script>
+
+    <title>Easy shoes</title>
+</head>
+<body>
+    <!--건너뛰기 링크(Tap키) 시작-->
+    <a id="skipNav" href="#contentsArea">본문 바로가기</a>
+    <!--건너뛰기 링크(Tap키) 종료-->
+
+    <!--wrapper 영역(전체 영역) 시작-->
+    <div id="wrapper">
+        <!--헤더 영역 시작-->
+        <header>
+            <div class="headerLogo">
+                <a href="index.html"><img src="img/mainlogo.png" alt="로고"></a>
+            </div>
+            <!--안내링크 영역 시작-->
+            <ul class="infoLink">
+                <li><a href="index.html">홈</a></li>
+                <li><a href="#">로그인</a></li>
+                <li><a href="join.html">회원가입</a></li>
+                <li><a href="#">고객센터</a></li>
+                <li><a href="#">관심상품</a></li>
+                <li><a href="#">마이페이지</a></li>
+            </ul>
+            <!--안내링크 영역Fs 종료-->
+
+            <!--메인메뉴 영역 시작-->
+            <div id="mainMenuArea">
+                <h2 class="hidden">메인메뉴</h2>
+                <ul class="mainMenu">
+                    <li><a href="#">Air Jordan1</a>
+                        <ul class="jordan">
+                            <li><a href="#">High</a></li>
+                            <li><a href="#">Mid</a></li>
+                            <li><a href="#">Row</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Dunk</a>
+                        <ul class="dunk">
+                            <li><a href="#">High</a></li>
+                            <li><a href="#">Row</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Yeezy 시리즈</a>
+                        <ul class="yeezy">
+                            <li><a href="#">Yeezy Boost</a></li>
+                            <li><a href="#">Yeezy Form</a></li>
+                            <li><a href="#">Yeezy Slide</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Collaboration</a>
+                        <ul class="collabo">
+                            <li><a href="#">오프화이트</a></li>
+                            <li><a href="#">트래비스 스캇</a></li>
+                            <li><a href="#">사카이</a></li>
+                            <li><a href="#">슈프림</a></li>
+                            <li><a href="#">피스마이너스원</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Lucky Drow</a>
+                        <ul class="drow">
+                            <li><a href="#">드로우 일정</a></li>
+                            <li><a href="#">드로우 신청</a></li>
+                            <li><a href="#">드로우 당첨 여부 확인</a></li>
+                            <li><a href="#">드로우 당첨자 구매하기</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!--메인메뉴 영역 종료-->
+        </header>
+        <!--헤더 영역 종료-->
+
+        <!--비쥬얼 영역 시작-->
+        <div id="visual">
+            <div class="main_img">
+                <img class="viimg" src="img/visualimg1.png" alt="메인 슬라이드 이미지1">
+                <img class="viimg" src="img/visualimg2.png" alt="메인 슬라이드 이미지2">
+                <img class="viimg" src="img/visualimg3.png" alt="메인 슬라이드 이미지3">
+                <img class="viimg" src="img/visualimg4.png" alt="메인 슬라이드 이미지4">
+                <img class="viimg" src="img/visualimg5.png" alt="메인 슬라이드 이미지5">
+            </div>
+            <div>
+                <img class="left_control" src="img/btn_left.png" alt="왼쪽">
+                <img class="right_control" src="img/btn_right.png" alt="오른쪽">
+            </div>
+        </div>
+        <!--비쥬얼 영역 종료-->
+
+        <!--회원가입 영역 시작-->
+        <section id="memberArea">
+            <h2>회원가입</h2>
+            <p class="formSign"><strong class="require">필수</strong>는 필수 입력 사항 입니다.</p>
+            <form action="join.jsp" method="post" id="joinForm" name="joinForm">
+                <fieldset>
+                    <!--기본정보 시작-->
+                    <div class="baseInfo">
+                        <h3>기본정보</h3>
+                        <fieldset>
+                            <label for="name">성명<strong class="require">필수</strong></label>
+                            <input type="text" id="name" name="name" placeholder="성함을 입력해주세요">
+                        </fieldset>
+                        <fieldset>
+                            <label for="id">아이디<strong class="require">필수</strong></label>
+                            <input type="text" id="id" name="id" minlength="4" maxlength="16" size="30" required placeholder="영문 숫자 포함 4~16자">
+                            <a href="pop_idCheck.html" class="idCheck">ID 중복확인</a>
+                        </fieldset>
+                        <fieldset>
+                            <label for="password">비밀번호<strong class="require">필수</strong></label>
+                            <input type="password" id="password" name="password" minlength="10" size="30" required placeholder="영문 숫자 포함 10자이상">
+                        </fieldset>
+                        <fieldset>
+                            <label for="confirmPassword">비밀번호확인<strong class="require">필수</strong></label>
+                            <input type="password" id="confirmPassword" name="confirmPassword"  minlength="10" size="30" required>
+                        </fieldset>
+                        <fieldset>
+                            <label class="labelAddress">주소</label>
+                            <a href="find_zipcode.html" class="findZipcode">우편번호 찾기</a>
+                            <input type="tel" id="zipcode" name="zipcode" maxlength="5" size="8" title="우편번호">
+                            <input type="text" id="address1" name="address" maxlength="100" size="50" placeholder=" 예) 서울시 강북구 수유동 13번지 (기본주소) ">
+                            <input type="text" id="address2" name="address" maxlength="100" size="50" placeholder=" 예) 2층 205호 (나머지 주소)">
+                        </fieldset>
+
+                       <fieldset class="tel_selct">
+                            <label>연락처</label>
+                            <select name="tel">
+                                <option value="">010</option><option value="">017</option><option value="">019</option>
+                                <option value="">011</option><option value="">018</option><option value="">016</option>
+                            </select> _
+                            <input type="tel" id="tel1" name="tel" maxlength="4" size="6" title="3~4자"> _
+                            <input type="tel" id="tel2" name="tel" maxlength="4" size="6" title="4자">
+                        </fieldset>
+                        
+                        <fieldset>
+                            <label for="email">이메일<strong class="require">필수</strong></label>
+                            <input type="email" id="email" name="email" size="30" required placeholder="입력 예) easy@naver.com">
+                        </fieldset>
+                    </div>
+                    <!--기본정보 끝-->
+
+                    <!--추가정보 시작-->
+                    <div class="addInfo">
+                        <h3>추가정보</h3>
+                        <fieldset class="sex" >
+                            <label>성별</label>
+                            <input type="radio" id="sexInfo1" name="sexInfo" value="Yes" checked>
+                            <label>남자</label>
+                            <input type="radio" id="sexInfo2" name="sexInfo" value="yes">
+                            <label>여자</label>
+                        </fieldset>
+           
+                        <fieldset class="birth">
+                            <label>생년월일</label>
+                            <input type="text" id="birth_year" maxlength="4" size="10" name="birth_year" title="출생년도" placeholder="예) 1993"><span>년</span>
+                            <input type="text" id="birth_month" maxlength="2" size="7" name="birth_month" title="출생월" placeholder="예) 02"><span>월</span>
+                            <input type="text" id="birth_day" maxlength="2" size="7" name="birth_day" title="출생일" placeholder="예) 12"><span>일</span>
+                        </fieldset>
+                     
+                        <fieldset class="region">
+                             <label>지역</label>
+                             <select name="region">
+                                <option value="">선택</option>
+                                <option value="">경기</option>
+                                <option value="">서울</option>
+                                <option value="">인천</option>
+                                <option value="">강원</option>
+                                <option value="">충남</option>
+                                <option value="">충북</option>
+                                <option value="">대전</option>
+                                <option value="">경남</option>
+                                <option value="">경북</option>
+                                <option value="">대구</option>
+                                <option value="">부산</option>
+                                <option value="">울산</option>
+                                <option value="">전북</option>
+                                <option value="">전남</option>
+                                <option value="">광주</option>
+                                <option value="">제주</option>
+                            </select>
+                         </fieldset>
+
+                        <fieldset class="shoesSize">
+                            <label>신발 사이즈</label>
+                            <select name="shoesSize">
+                                <option value="">선택</option>
+                                <option value="">220</option>
+                                <option value="">225</option>
+                                <option value="">230</option>
+                                <option value="">235</option>
+                                <option value="">240</option>
+                                <option value="">245</option>
+                                <option value="">250</option>
+                                <option value="">255</option>
+                                <option value="">260</option>
+                                <option value="">265</option>
+                                <option value="">270</option>
+                                <option value="">275</option>
+                                <option value="">280</option>
+                                <option value="">285</option>
+                                <option value="">290</option>
+                                <option value="">295</option>
+                                <option value="">300</option>
+                           </select>
+                        </fieldset>
+                   
+                        <fieldset class="sms">
+                            <label><span>쇼핑정보 SMS 수신동의</span><strong class="require">필수</strong></label>
+                            <span>Easy shoes에서 제공하는 유익한 이벤트 소식을 SMS로 받아보실 수 있습니다.</span>
+                            <input type="radio" id="smsOk" name="sms" value="Yes" checked>
+                            <label for="smsOk">동의함</label>
+                            <input type="radio" id="smsNo" name="sms" value="No">
+                            <label for="smsNo">동의안함</label>
+                        </fieldset>
+
+                        <fieldset class="mail">
+                            <label><span>쇼핑정보 이메일 수신동의</span><strong class="require">필수</strong></label>
+                            <span>Easy shoes에서 제공하는 유익한 이벤트 소식을 이메일로 받아보실 수 있습니다.</span>
+                            <input type="radio" id="mailOk" name="mail" value="Yes" checked>
+                            <label>동의함</label>
+                            <input type="radio" id="mailNo" name="mail" value="No">
+                            <label>동의안함</label>
+                        </fieldset>
+                    </div>
+                    <!--추가정보 끝-->
+
+                    <div class="btnJoinArea">
+                        <button type="submit" class="btnOk">회원가입</button>
+                        <button type="reset" class="btnCancel">취소</button>
+                    </div>
+                
+                </fieldset>
+            </form>
+        </section>
+        <!--회원가입 영역 종료-->
+
+
+        <!--푸터 영역 시작-->
+        <footer>
+            <div id="footerInner">
+                <section class="guide">
+                    <h2 class="hidden">내부규정 </h2>
+                    <ul>
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="#">인재채용</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보 처리방침</a></li>
+                    </ul>
+                </section>
+
+                <section class="callCenter">
+                    <h2>고객센터☏</h2>
+                    <ul>
+                        <li>대표번호: 1588-7813</li>
+                        <li>운영시간: 평일 11:00 - 18:00 (토 ∙ 일, 공휴일 휴무)</li>
+                        <li>점심시간: 평일 13:00 - 14:00</li>
+                        <li>1:1 문의하기는 앱에서만 가능합니다.</li>
+                    </ul>
+                </section>
+
+                <address>
+                    <p>· 주식회사 이지 대표 이지훈</p>
+                    <p>· 사업자 등록번호: 570-88-01618</p>
+                    <p>· 사업장 소재지: 서울시 강북구 392-117 영남빌딩 3층</p>
+                    <p>· 전화: 02-123-4567</p>
+                    <p>· E-Mail: <a href="mailto:gxwlgns@naver.com">gxwlgns@naver.com</a></p>
+                </address>
+                <p class="copyright">이지(주)는 통신판매 중개자로서 통신판매의 당사자가 아니므로 개별 판매자가 등록한 상품정보에 대해서 책임을 지지 않습니다. <br>
+                    단, 거래과정에서 검수하고 보증하는 내용에 대한 책임은 당사에 있습니다
+                </p>
+            </div>
+        </footer>
+        <!--푸터 영역 종료-->
+    </div>
+    <!--wrapper 영역(전체 영역) 종료-->
+</body>
+</html>

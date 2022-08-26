@@ -1,0 +1,495 @@
+@charset "utf-8";
+
+/*usefulArea 영역 시작*/
+#usefulArea{
+    width: 240px;
+}
+
+#mainBox1, #mainBox2{
+    text-align: center;
+}
+/*usefulArea 영역 종료*/
+
+/*로그인 영역 시작*/
+.login{
+    /*background-image: radial-gradient(circle at top right, #ffc848, #ff8208);*/
+    border-radius: 5px;
+    padding-top: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+    height: 300px;
+    border: 1px solid #ccc;
+}
+.login h2{
+    display: none;
+}
+
+.login label{ /*아이디 패스워드 줄맞춤*/
+    display: inline-block;
+    width: 200px;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-left: 20px;
+}
+.login input{
+    width: 180px;
+    height: 20px;
+    padding: 2px 3px 3px 10px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    display: block;
+    
+    
+}
+#userId{
+    margin: 10px 0 30px 20px;
+}
+
+#userPw{
+    margin: 10px 0 20px 20px;
+}
+.login button{
+    font-family: "NotoSansKR_Regular";
+    letter-spacing: 2px;
+    width: 200px;
+    height: 35px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2em;
+    background-image: linear-gradient(to right top, #747474 0%, #BDBDBD 100%);
+    border-radius: 10px;
+    border: none;
+    margin-left: 15px;
+}
+
+.login button:hover{
+    background-image: linear-gradient(to right top, #BDBDBD 0%, #747474 100%);
+    border-radius: 10px;
+    color: #F15F5F;
+}
+.login fieldset{
+    padding-bottom: 15px;
+}
+.memberLink{
+    display: inline-block;
+    text-align: center;
+    margin: 10px 0 15px 18px ;
+    font-size: 15px;
+}
+
+.join{
+    display: block;
+    margin-bottom: 12px;
+}
+
+.findPW::before {
+    content: "|";
+    color: #000;
+    margin: 0 5px 0 4px;
+}
+/*로그인 영역 종료*/
+
+/*히스토리 영역 시작*/
+.history{
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    background-image: linear-gradient(to top left, #fff 40%, #FFEFEF 100%);
+    height: 260px;
+
+}
+.history img{
+    width: 100px;
+    height: 200px;
+}
+.history > h2{
+    font-size: 1.3em;
+    text-align: center;
+    padding: 10px 0;
+    
+}
+.history dl{
+    margin-top: 15px;
+    height: 200px;
+    overflow: hidden;
+
+}
+.history dt{
+    float: right;
+    width: 100px;
+    color: #CC3D3D;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.history dd:nth-of-type(1){
+    float: left;
+}
+.history dd:nth-of-type(2){
+    float: right;
+    width: 100px;
+    line-height: 1.23;
+    text-align: justify;/*글자 양쪽 정렬*/
+}
+
+/*히스토리 영역 종료*/
+
+/*메인페이지 영역 시작*/
+#mainPage{
+    width: 584px;
+    margin: 0px 10px;
+}
+
+.imgBox{
+    display: inline-block;
+    margin: 10px;
+    font-size: 1.3em;
+}
+
+.imgBox:hover img{
+    width: 170px;
+    height: 150px;
+    transition: 0.7s;
+}
+
+.imgBox img{
+    width: 150px;
+    height: 122px;
+    border-radius: 50px;
+    box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.3);
+   
+}
+
+.imgBox p{
+    font-family: "IBMPlexSansKR_Regular";
+    margin-top: 5px;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+#comming img{
+
+    background: linear-gradient(to left top, #fff 0%, #f6f6f6 50%, #FFC19E 100%);
+}
+#new img{
+    background: linear-gradient(to top, #fff 0%, #f6f6f6 50%, #FFD8D8 100%);
+}
+#hot img{
+    background: linear-gradient(to right top, #fff 0%, #f6f6f6 50%, #FF2424 100%);
+
+}
+#man img{
+    background: linear-gradient(to left bottom, #fff 0%, #f6f6f6 50%, #DAD9FF 100%);
+
+}
+#woman img{
+    background: linear-gradient(to bottom, #fff 0%, #f6f6f6 50%, #FFD9FA 100%);
+
+}
+#coordi img{
+    background: linear-gradient(to right bottom, #fff 0%, #f6f6f6 50%, #D4F4FA 100%);
+
+}
+
+
+/*메인페이지 영역 종료*/
+
+/*이용안내, 고객지원, 자주묻는질문 영역시작*/
+.board{
+    margin-left: 30px;
+    width: 520px;
+    height: 210px;
+    display: inline-block;
+}
+
+.board::before {
+    content: "";
+    position: relative;
+    top: 38px;
+    display: inline-block;
+    width: 520px;
+    height: 1.5px;
+    background: linear-gradient(to right bottom, #fff 0%, #D5D5D5 50%, #A6A6A6 100%);
+}
+
+.board section{
+    position: relative;
+}
+.board section:target{/*가상 선택자(target > 클릭시 타겟)*/
+    z-index: 10;
+}
+.board h2{
+    float: left;
+    font-size: 1.05em;
+}
+
+.board h2 a{
+    display: inline-block;
+    padding: 6px 15px;
+    color: #7a7a7a;
+    border: 1px solid #c9c9c9;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: linear-gradient(to bottom, #F6F6F6 0%, #D5D5D5 100%);
+    
+}
+.board section:target h2 a{
+    color: #ff4911;
+    border-bottom: 1px solid #fff;
+    font-size: 1.1em;
+    background: linear-gradient(to bottom, #fff 0%, #eee 100%);
+    transition: 0.5s;
+    border: 1px solid #ccc;
+}
+
+.board ul{
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+}
+
+.board ul li{
+    margin-bottom: 8px;
+    border-radius: 5px;
+    padding-left: 5px;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.3);
+    
+}
+.board ul li a {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; /*텍스트가 영역 밖으로 나갈정도의 크기일때 말줄임표 (...) white-space: nowrap;  overflow: hidden; 과 같이 세트*/
+    font-size: 1.2em; 
+    margin-left: 5px;
+}
+.board ul li a:hover {
+    text-decoration: underline;
+    font-size: 1.15em;
+    font-weight: bold;
+    transition: 0.3s;
+    
+}
+
+.board ul a:hover::before {
+    content: "✓ ";
+    text-decoration: none;
+    
+}
+
+.board ul li:nth-child(2n+1){
+    background-image: linear-gradient(to right, #F6F6F6 0%, #fff 100%);
+    
+}
+.board ul li:nth-child(2n){
+    background-image: linear-gradient(to right, #eee8e8 0%, #fff 100%);
+    
+}
+
+.board .more{
+    position: absolute;
+    top: 5px;
+    right: 0;
+    font-size: 1.2em;
+    font-weight: 100;
+}
+.board .more::before{
+    content: "✚";
+    color: #F29661;
+    margin-right: 2px;
+}
+/*이용안내, 고객지원, 자주묻는질문 영역끝*/
+
+/*serch 영역 시작*/
+.serch{
+    font-size: 1.2em;
+    display: inline-block;
+    width: 100%;
+    margin: 30px 0 0 30px;
+
+}
+.serch label{
+    margin-bottom: 5px;
+    font-size: 1.1em;
+}
+
+.serch input{
+    margin-left: 15px;
+    width: 315px;
+    display: inline-block; 
+}
+
+.serch button{
+    padding: 5px 13px;
+    margin-left: 5px;
+    color: #fff;
+    background: #747474;
+    border-radius: 7px;
+    border: none;
+}
+/*serch 영역 종료*/
+
+/*eventArea 영역 시작*/
+#eventArea {
+    width: 200px;
+}
+/*신규 이벤트 영역 시작*/
+.event{
+    box-shadow: 9px 6px 5px rgba(0, 0, 0, 0.2);
+    background-image: linear-gradient(to bottom, #F6F6F6 0%, #f4f4f4 100%);
+    border: 1px solid #F6F6F6;
+    
+}
+.event h2{
+    font-size: 1.2em;
+    padding: 20px 0 10px 0;
+    text-align: center;
+}
+.event span{
+    color: #ff3c00;
+    font-weight: bold;
+    
+}
+.event img{
+    display: block;
+    margin: 0 auto;
+    height: 180px;
+    width: 93%;
+    box-shadow: 1px 1px 0px 2px rgba(0, 0, 0, 0.1);
+}
+.event p{
+    height: 0px;
+    padding: 10px 0;
+    line-height: 1.3;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    overflow: hidden;
+    transition: 0.5s;
+    visibility: hidden;
+    
+}
+.event:hover p{
+    visibility: visible;
+    height: 85px;
+}
+
+.event em{
+    font-style: normal;
+    display: block;
+}
+
+/*신규 이벤트 영역 종료*/
+
+/*세일 영역 시작*/
+.sale{
+    margin-top: 20px;
+    padding-top: 20px;
+    box-shadow: 9px 6px 5px rgba(0, 0, 0, 0.2);
+    border: 1px solid #F6F6F6;
+}
+.sale h2{
+    font-size: 1.2em;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.sale span{
+    color: #ff3c00;
+    font-weight: bold;
+}
+.sale img{
+    border: 1px solid #eee;
+    box-shadow: 1px 1px 0px 2px rgba(0, 0, 0, 0.1);
+    height: 180px;
+    width: 93%;
+    margin: 0 auto;
+    display: block;
+}
+.sale p {
+    height: 0;
+    padding: 10px 0;
+    margin-top: 5px;
+    line-height: 1.3;
+    text-align: center;
+    font-size: 1.2em;
+    overflow: hidden;
+    transition: 0.5s;
+    visibility: hidden;
+}
+
+.sale:hover p{
+    visibility: visible;
+    height: 75px;
+}
+.sale em{
+    font-style: normal;
+    display: block;
+}
+
+/*세일 사이트 영역 종료*/
+
+/*인기 사이트 영역 시작*/
+.hotLink{
+    margin-top: 20px;
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom, #fff 0%, #f4f4f4 100%);
+    padding: 10px 12px 8px 10px;
+}
+.hotLink h2{
+    font-size: 1.2em;
+}
+.hotLink span{
+    color: #ff3c00;
+}
+.hotLink .more{
+    position: absolute;
+    top: 8px;
+    right: 6px;
+    padding: 5px;
+}
+.hotLink ol{
+    margin-top: 5px;
+    padding: 0;
+    overflow: hidden;
+}
+.hotLink li{
+    position: relative;
+    margin-top: 7px;
+    counter-increment: number;/**/
+}
+.hotLink li:last-child{
+    margin-bottom: 2px;
+}
+.hotLink li::before{
+    content: counter(number, decimal);/*카운터*/
+    padding: 2px 5px;
+    background-color: #a1a1a1;
+    border-radius: 3px;
+    margin-right: 5px;
+    color: #fff;
+}
+.hotLink em{
+    float: right;
+    width: 8px;
+    height: 0;
+    overflow: hidden;
+    padding-top: 12px;
+    background: url(images/rank.png) no-repeat;
+}
+.hotLink .up{
+    background-position: 0 0;
+}
+.hotLink .stop{
+    background-position: 0 50%;
+}
+.hotLink .down{
+    background-position: 0 100%;
+}
+/*인기 사이트 영역 종료*/
+
+/*eventArea 영역 종료*/
+
+

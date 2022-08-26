@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ko"> <!--기본언어 설정-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="JiHoon Lee"> <!--홈페이지 제작자-->
+    <meta name="keywords" content="Drow, 신발, 조던, 덩크, 한정판 스니커즈"> <!--검색엔진을 통한 키워드 (대략적인 사이트 정보)-->
+    <meta name="description" content="발매예정인 신발에 대한 일정확인"> <!--홈페이지의 대략적인 설명(요약정보)-->
+    <meta name="robots" content="all"> <!--검색엔진을 통한 노출설정(all = 전부)-->
+    <link rel="shortcut icon" href="img/mainlogo.png"> <!--파비콘 지정(타이틀과 함께 노출되는 이미지)-->
+    <link rel="stylesheet" href="css/normalize.css"> <!--css 초기화(옛날버전 > 기본값으로 초기화/인터넷에서 초기화 css다운가능)-->
+    <link rel="stylesheet" href="css/common.css"> <!--메인 페이지와 서브페이지 공통적으로 사용할 스타일(css) 연결-->
+    <link rel="stylesheet" href="css/upcoming.css"> 
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/upcoming.js"></script>
+    <script src="js/common.js"></script>
+    <title>Easy shoes</title>
+    
+</head>
+<body>
+    <!--건너뛰기 링크(Tap키) 시작-->
+    <a id="skipNav" href="#contentsArea">본문 바로가기</a>
+    <!--건너뛰기 링크(Tap키) 종료-->
+
+    <!--wrapper 영역(전체 영역) 시작-->
+    <div id="wrapper">
+        <!--헤더 영역 시작-->
+        <header>
+            <div class="headerLogo">
+                <a href="index.html"><img src="img/mainlogo.png" alt="로고"></a>
+            </div>
+            <!--안내링크 영역 시작-->
+            <ul class="infoLink">
+                <li><a href="index.html">홈</a></li>
+                <li><a href="#">로그인</a></li>
+                <li><a href="join.html">회원가입</a></li>
+                <li><a href="#">고객센터</a></li>
+                <li><a href="#">관심상품</a></li>
+                <li><a href="#">마이페이지</a></li>
+            </ul>
+            <!--안내링크 영역Fs 종료-->
+
+            <!--메인메뉴 영역 시작-->
+            <div id="mainMenuArea">
+                <h2 class="hidden">메인메뉴</h2>
+                <ul class="mainMenu">
+                    <li><a href="#">Air Jordan1</a>
+                        <ul class="jordan">
+                            <li><a href="#">High</a></li>
+                            <li><a href="#">Mid</a></li>
+                            <li><a href="#">Row</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Dunk</a>
+                        <ul class="dunk">
+                            <li><a href="#">High</a></li>
+                            <li><a href="#">Row</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Yeezy 시리즈</a>
+                        <ul class="yeezy">
+                            <li><a href="#">Yeezy Boost</a></li>
+                            <li><a href="#">Yeezy Form</a></li>
+                            <li><a href="#">Yeezy Slide</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Collaboration</a>
+                        <ul class="collabo">
+                            <li><a href="#">오프화이트</a></li>
+                            <li><a href="#">트래비스 스캇</a></li>
+                            <li><a href="#">사카이</a></li>
+                            <li><a href="#">슈프림</a></li>
+                            <li><a href="#">피스마이너스원</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Lucky Drow</a>
+                        <ul class="drow">
+                            <li><a href="#">드로우 일정</a></li>
+                            <li><a href="#">드로우 신청</a></li>
+                            <li><a href="#">드로우 당첨 여부 확인</a></li>
+                            <li><a href="#">드로우 당첨자 구매하기</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!--메인메뉴 영역 종료-->
+        </header>
+        <!--헤더 영역 종료-->
+
+        <!--비쥬얼 영역 시작-->
+        <div id="visual">
+            <div class="main_img">
+                <img class="viimg" src="img/visualimg1.png" alt="메인 슬라이드 이미지1">
+                <img class="viimg" src="img/visualimg2.png" alt="메인 슬라이드 이미지2">
+                <img class="viimg" src="img/visualimg3.png" alt="메인 슬라이드 이미지3">
+                <img class="viimg" src="img/visualimg4.png" alt="메인 슬라이드 이미지4">
+                <img class="viimg" src="img/visualimg5.png" alt="메인 슬라이드 이미지5">
+            </div>
+            <div>
+                <img class="left_control" src="img/btn_left.png" alt="왼쪽">
+                <img class="right_control" src="img/btn_right.png" alt="오른쪽">
+            </div>
+        </div>
+        <!--비쥬얼 영역 종료-->
+        <!--서브페이지 영역 시작-->
+        <div id="newShoseArea">
+            <h2>Upcoming Release</h2>
+            <p>발매예정</p>
+            <div class="shoseImg shoseImg1">
+                <div>
+                    <img src="img/dunk1.png" alt="덩크로우 바시티그린" >
+                    <em>Nike Dunk Low Retro Varsity Green</em><br>
+                    <span>나이키 덩크 로우 레트로 바시티 그린</span>
+                    <p>8월<br><strong>02일</strong></p>
+                </div>
+                
+
+                <div>
+                    <img src="img/yeezy4.png" alt="이지폼러너 오닉스">
+                    <em>Adidas Yeezy Foam RNNR Onyx</em><br>
+                    <span>아디다스 이지 폼 러너 오닉스</span>
+                    <p>8월<br><strong>08일</strong></p>
+                </div>
+
+                <div>
+                    <img src="img/jordan1tv.png" alt="스캇 조던 로우">
+                    <em>Jordan 1 x Travis Scott Retro Low OG SP Sail and Ridgerock</em><br>
+                    <span>조던 1 x 트래비스 스캇 레트로 로우 OG SP 세일 앤 리저록</span>
+                    <p>8월<br><strong>08일</strong></p>
+                </div>
+            </div>
+
+            <div class="shoseImg shoseImg2">
+                <div>
+                    <img src="img/yeezy1.png" alt="이지부스트 지브라">
+                    <em>Adidas Yeezy Boost 350 V2 Zebra 2022</em><br>
+                    <span>아디다스 이지 부스트 350 V2 지브라 2022</span>
+                    <p>8월<br><strong>11일</strong></p>
+                </div>
+                <div>
+                    <img src="img/dunk3.png" alt="덩크로우 서울">
+                    <em>Nike Dunk Low SE Seoul</em><br>
+                    <span>나이키 덩크 로우 SE 서울</span>
+                    <p>8월<br><strong>14일</strong></p>
+                </div>
+                <div>
+                    <img src="img/jordanpup.png" alt="조던1 하이 코트퍼플">
+                    <em>Jordan 1 Retro High OG Court Purple</em><br>
+                    <span>조던 1 레트로 하이 OG 코트 퍼플</span>
+                    <p>8월<br><strong>20일</strong></p>
+                </div>
+            </div>
+
+            <div class="shoseImg shoseImg3" >
+                <div>
+                    <img src="img/jordan1sg.png" alt="조던1 미드 스모크그레이">
+                    <em>Jordan 1 Mid Light Smoke Grey Anthracite</em><br>
+                    <span>조던 1 미드 라이트 스모크 그레이 앤트러사이트</span>
+                    <p>8월<br><strong>24일</strong></p>
+                </div>
+                <div>
+                    <img src="img/dunk4.png" alt="덩크로우 유니버시티 블루">
+                    <em>Nike Dunk Low Retro University Blue</em><br>
+                    <span>나이키 덩크 로우 레트로 유니버시티 블루</span>
+                    <p>8월<br><strong>25일</strong></p>
+                </div>
+                <div>
+                    <img src="img/yeezy2.png" alt="이지부스트 솔리드그레이">
+                    <em>Adidas Yeezy Boost 700 Wave Runner Solid Grey 2022</em><br>
+                    <span>아디다스 이지 부스트 700 웨이브 러너 솔리드 그레이 2022</span>
+                    <p>8월<br><strong>28일</strong></p>
+                </div>
+            </div>
+
+            <div class="shoseImg shoseImg4">
+                <div>
+                    <img src="img/dunk2.png" alt="카시나 덩크로우 버스">
+                    <em>Nike x Kasina Dunk Low 80's Bus</em><br>
+                    <span>나이키 x 카시나 덩크 로우 80's 버스</span>
+                    <p>8월<br><strong>31일</strong></p>
+                </div>
+                <div>
+                    <img src="img/NB1.png" alt="뉴발란스 2002r 왓나우">
+                    <em>New Balance x Bryant Giles 2002R What Now?</em><br>
+                    <span>뉴발란스 x 브라이언트 길스 2002R 왓 나우?</span>
+                    <p>9월<br><strong>02일</strong></p>
+                </div>
+                <div>
+                    <img src="img/dunk5.png" alt="덩크로우 로즈위스퍼">
+                    <em>(W) Nike Dunk Low Rose Whisper</em><br>
+                    <span>(W) 나이키 덩크 로우 로즈 위스퍼</span>
+                    <p>9월<br><strong>06일</strong></p>
+                </div>
+            </div>
+
+            <div class="shoseImg shoseImg5">
+                <div>
+                    <img src="img/jordanroyal.png" alt="조던1 하이 로얄토">
+                    <em>Jordan 1 Retro High OG Royal Toe</em><br>
+                    <span>조던 1 레트로 하이 OG 로얄토</span>
+                    <p>9월<br><strong>10일</strong></p>
+                </div>
+                <div>
+                    <img src="img/yashi1.png" alt="야스히로 페이턴트레드 로우">
+                    <em>Maison Mihara Yasuhiro Blakey OG Sole Brushed Patent Low-top Sneaker Red</em><br>
+                    <span>메종 미하라 야스히로 블레이키 OG 솔 브러쉬드 페이턴트 로우탑 스니커 레드</span>
+                    <p>9월<br><strong>13일</strong></p>
+                </div>
+                <div>
+                    <img src="img/convers1.png" alt="컨버스 터보 다크 척">
+                    <em>Converse x Drkshdw Turbodrk Chuck 70 Hi Black Lacquered Denim</em><br>
+                    <span>컨버스 x 다크쉐도우 터보다크 척 70 하이 블랙 래커드 데님</span>
+                    <p>9월<br><strong>17일</strong></p>
+                </div>
+            </div>
+
+            <div class="shoseImg shoseImg6">
+                <div>
+                    <img src="img/NB2.png" alt="뉴발란스 530 아이보리">
+                    <em>New Balance 530 Ivory</em><br>
+                    <span>뉴발란스 530 아이보리</span>
+                    <p>9월<br><strong>21일</strong></p>
+                </div>
+                <div>
+                    <img src="img/jordan4_1.png" alt="조던4 유니버시티 블루">
+                    <em>Jordan 4 Retro University Blue</em><br>
+                    <span>조던 4 레트로 유니버시티 블루</span>
+                    <p>9월<br><strong>23일</strong></p>
+                </div>
+                <div>
+                    <img src="img/dunk6.png" alt="덩크로우 오프화이트 로트38">
+                    <em>Nike x Off-White Dunk Low The 50 - Lot 38</em><br>
+                    <span>나이키 x 오프화이트 덩크 로우 더 50 - 로트 38</span>
+                    <p>9월<br><strong>28일</strong></p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <button id="btnNewMore">더보기</button>
+        </div>
+        <!--서브페이지 영역 종료-->
+       
+        <!--푸터 영역 시작-->
+        <footer>
+            <div id="footerInner">
+                <section class="guide">
+                    <h2 class="hidden">내부규정 </h2>
+                    <ul>
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="#">인재채용</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보 처리방침</a></li>
+                    </ul>
+                </section>
+
+                <section class="callCenter">
+                    <h2>고객센터☏</h2>
+                    <ul>
+                        <li>대표번호: 1588-7813</li>
+                        <li>운영시간: 평일 11:00 - 18:00 (토 ∙ 일, 공휴일 휴무)</li>
+                        <li>점심시간: 평일 13:00 - 14:00</li>
+                        <li>1:1 문의하기는 앱에서만 가능합니다.</li>
+                    </ul>
+                </section>
+
+                <address>
+                    <p>· 주식회사 이지 대표 이지훈</p>
+                    <p>· 사업자 등록번호: 570-88-01618</p>
+                    <p>· 사업장 소재지: 서울시 강북구 392-117 영남빌딩 3층</p>
+                    <p>· 전화: 02-123-4567</p>
+                    <p>· E-Mail: <a href="mailto:gxwlgns@naver.com">gxwlgns@naver.com</a></p>
+                </address>
+                <p class="copyright">이지(주)는 통신판매 중개자로서 통신판매의 당사자가 아니므로 개별 판매자가 등록한 상품정보에 대해서 책임을 지지 않습니다. <br>
+                    단, 거래과정에서 검수하고 보증하는 내용에 대한 책임은 당사에 있습니다
+                </p>
+            </div>
+        </footer>
+        <!--푸터 영역 종료-->
+    </div>
+    <!--wrapper 영역(전체 영역) 종료-->
+</body>
+</html>
