@@ -7,14 +7,13 @@
                     height: '+=' + 500
                 });
                 }else{
-                    $('#btnNewMore').html('이후 발매 예정인 상품이 없습니다')
+                    $('#btnNewMore').html('발매 예정 상품이 없습니다')
                     .css({
                         color: '#FF2424',
                         fontSize: 3+'em',
                         cursor: 'default',
                         letterSpacing: '2px',
-                        'margin-bottom': '20px',
-                        background: 'none'
+                        'margin-bottom': '20px'
                     });
                 }
         });
