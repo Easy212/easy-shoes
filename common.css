@@ -1,0 +1,308 @@
+/*공통 CSS 작업*/
+@charset "utf-8";
+
+/*초기화 작업*/
+html, body, div, header, section, footer, legend, ul, ol, li, dl, dt, dd, h1, h2, h3, p, select, option{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+fieldset{
+    border: 0;
+}
+/*숨김 컨텐츠 */
+.hidden, legend{
+    position: absolute;
+    left: -9999px;
+}
+/*링크 스타일*/
+a:link{ /*링크 방문 전 글꼴*/
+    color: #000;
+    text-decoration: none;
+}
+a:visited{ /*링크 방문 후 글꼴*/
+    color: #5E5E5E;
+    text-decoration: none;
+}
+a:hover, a:focus{ /*focus는 웹접근성 때문에 사용*/
+    color: #CC3D3D;
+    text-decoration: none;
+}
+
+/*웹 폰트*/
+@font-face{
+    font-family: "StylishRegular";
+    font-weight: 400;
+    src: url("font/StylishRegular.ttf") format("truetype");
+}
+
+@font-face{
+    font-family: "NotoSansKR_Regular";
+    font-weight: 400;
+    src: url("font/NotoSansKR_Regular.ttf") format("truetype");
+
+}
+@font-face{
+    font-family: "IBMPlexSansKR_Regular";
+    font-weight: 400;
+    src: url("font/IBMPlexSansKR-Regular") format("truetype");
+}
+
+/*기본 스타일*/
+body{
+    font-family: "StylishRegular";
+    color: #000;
+    background-color: #fff;
+    font-size: 0.9em;
+
+}
+/*건너뛰기 링크*/
+#skipNav{
+    position: absolute;
+    left: -9999px;
+}
+#skipNav:focus{
+    left: 50%;
+    margin: 3px 0 0 -3em;
+    padding: 5px 15px;
+    background-color: #000;
+    color: #fff;
+    outline: 0;
+    z-index: 10;
+}
+
+/*전체적인 레이아웃*/
+header, #visual, #mainMenuArea{
+    width: 1784px;
+    margin: 0 auto;
+    box-sizing: border-box; /*padding과 boder를 포함한 크기로 합침(패딩의 크기와 보더의 크기를 각각사용하지않음)*/
+}
+
+
+#contentsArea{
+    width: 1024px;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+}
+/*헤더 영역 시작*/
+header{
+    height: 125px;
+    position: relative;
+    border-radius: 0 0 15px 15px;
+    padding: 0 30px;
+}
+.headerLogo{
+    position: absolute;
+    top: 0px;
+    left: 16px;
+}
+.headerLogo img{
+    width: 200px;
+    height: 110px;
+}
+.infoLink{
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.infoLink > li{
+    display: inline-block;
+    padding: 10px 0;
+}
+.infoLink > li a{
+    font-size: 1.1em;
+}
+.infoLink a::before{
+    content: ":";
+    color: #000;
+    padding-right: 8px;
+}
+
+.infoLink a::before:hover{
+    color: #000;
+}
+.infoLink > li:first-child a::before{
+    content: "";
+}
+
+.mainMenu{
+    float: right;
+    position: relative;
+    right: 50px;
+    height: 45px;
+    
+}
+
+.mainMenu > li{
+    position: relative;
+    background-color: #000;
+    padding: 0 10px;
+}
+.mainMenu li, .mainMenu a{
+    display: inline-block;
+
+}
+.mainMenu > li > a{
+    font-size: 1.4em;
+    padding: 10px;
+    margin: 0 15px;
+    color: #fff;
+    letter-spacing: 1px; /*자간 넓히기*/
+
+}
+
+
+.mainMenu > li > a:hover, .mainMenu > li > a:focus{
+    color: #F29661;
+    
+}
+
+.mainMenu ul{
+    position: absolute;
+    z-index: 10;
+    
+    
+}
+.mainMenu ul a{
+    padding: 8px 25px;
+    font-size: 1.3em;
+    text-shadow: 3px 2px 3px rgba(0, 0, 0, 0.3);                 
+}
+
+.mainMenu > li:last-child ul a{
+    position: relative;
+    right: 20px;
+    white-space: nowrap;
+}
+
+.mainMenu > li:hover ul{
+    display: block;
+    text-align: center;
+}
+.jordan{
+    display: none;
+}
+.dunk{
+    display: none;
+}
+.yeezy{
+    display: none;
+}
+.collabo{ 
+    display: none;
+}
+.drow{
+    display: none;
+} 
+
+/*헤더 영역 종료*/
+
+/*비쥬얼 영역 시작*/
+#visual{
+    margin-top: 30px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+.main_img{
+    margin: 0 auto;
+    width: 100%;
+    height: 400px;
+    white-space: nowrap;
+    position: relative;
+}
+
+.main_img>img{
+    display: inline-block;
+    width: 101%;
+    height: 400px;
+    
+}
+.left_control{
+    width: 70px;
+    height: 120px;
+    position: absolute;
+    top: 140px;
+    left: 15px;
+    cursor: pointer;
+    
+}
+.right_control{
+    width: 60px;
+    height: 120px;
+    position: absolute;
+    top: 140px;
+    right: 15px;
+    cursor: pointer;
+   
+}
+
+/*비쥬얼 영역 종료*/
+
+/*메인 컨텐츠 영역 시작*/
+#contentsArea{
+    margin-top: 15px;
+    padding: 30px 0; 
+    background-color: #fff;
+    border-radius: 15px 15px 0 0;
+    display: flex;
+    flex-flow: nowrap;
+}
+/*메인 컨텐츠 영역 종료*/
+
+
+/*푸터영역 시작*/
+footer{
+    font-family: "NotoSansKR_Regular";
+    font-size: 0.8em;
+    background-image: linear-gradient(to bottom, #c7c7c7 0%,#e6e6e6 70%, #fff 100%);
+    padding: 15px 0;
+    
+}
+
+.guide{
+    width: 450px;
+    background: #000;
+    border-radius: 5px;
+    padding-left: 10px;
+    margin: 5px 0 10px 0;
+    display: inline-block;
+    margin-left: 20px;
+}
+.guide li{
+    display: inline-block;
+   
+}
+.guide a{
+    display: inline-block;
+    color: #fff;
+    padding: 10px 10px;
+}
+.guide a::before{
+    content: "|";
+    padding-right: 20px;
+}
+.guide li:first-child a::before{
+    content: "";
+}
+.callCenter{
+    font-family: "StylishRegular";
+    float: right;
+    margin: 10px 50px 0 0;
+    font-size: 1.5em;
+    line-height: 1.8;
+}
+
+address{
+    font-style: normal;
+    line-height: 1.5;
+    margin-left: 30px;
+}
+.copyright{
+    margin-top: 15px;
+    margin-left: 20px;
+}
+/*푸터영역 종료*/

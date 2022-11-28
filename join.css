@@ -1,0 +1,206 @@
+@charset "utf-8";
+/*meberArea 영역 시작*/
+fieldset{
+
+}
+#memberArea{
+    width: 1024px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#memberArea h2{
+    font-size: 1.5em;
+    font-family: "NotoSansKR_Regular";
+    color: #6F6F6F;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid #6F6F6F;
+    padding-top: 30px;
+    padding-bottom: 15px;
+ 
+}
+
+input[type="text"], input[type="password"], input[type="tel"], input[type="email"]{
+    border:none;
+    border-bottom: 1px solid #6F6F6F;
+    position: relative;
+    top: 6px
+}
+.formSign{
+    text-align: right;
+    margin: 20px 0 10px;
+}
+.require{
+    display: inline-block;
+    width: 10px;
+    height: 12px;
+    white-space: nowrap;
+    text-indent: 10px;
+    overflow: hidden;
+}
+.require::before{
+    font-size: 0.2em;
+    content: "★";
+    color: #f48002;
+    position: relative;
+    left: -10px;
+    top: -6px;
+}
+.baseInfo>h3{
+    margin-bottom: 15px;
+}
+
+.addInfo>h3{
+    margin:25px 0 10px 0;
+}
+
+#joinForm{
+    border-top: 2px solid #fff;
+
+}
+#joinForm p{
+    margin-bottom: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+#joinForm .addInfo label{
+    padding: 15px 30px ;
+
+}
+
+#joinForm .addInfo input[type="radio"]{
+    position: relative;
+    top: 19px;
+    float: left;
+}
+
+#joinForm .sex label:nth-child(3), #joinForm .sex label:nth-child(5){
+    width: 100px;
+    background: none;
+    padding: 15px 10px;
+    border: none;
+    font-weight: normal;
+}
+#joinForm .addInfo .birth input[type="text"]{
+    text-align: center;
+    position: unset;
+
+}
+.addInfo .birth span{
+    font-size: 1.1em;
+    padding: 6px 6px 0 6px;
+}
+
+.region select, .shoesSize select{
+    border-radius: 5px;
+    height: 32px;
+    padding: 5px 10px;
+    margin-top: 7px;
+    font-size: 1.1em;
+}
+
+#joinForm .sms label, #joinForm .mail label{
+    height: 50px;
+
+}
+
+#joinForm .sms label:nth-child(6), #joinForm .sms label:nth-child(4),
+#joinForm .mail label:nth-child(6), #joinForm .mail label:nth-child(4){
+    width: 100px;
+    height: 10px;
+    background:none;
+    padding: 15px 10px;
+ 
+    
+    border: none;
+    font-weight: normal;
+}
+
+
+#joinForm label{
+    float: left;
+    width: 160px;
+    padding: 15px 30px;
+    margin-right: 20px;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #747474;
+    background: #D5D5D5;
+}
+
+#joinForm input{
+    margin: 10px 0;
+}
+
+#joinForm input[type="radio"]{
+    margin: 0;
+}
+a.idCheck, a.findZipcode{
+    background-color: #1B1B1B;
+    color: #fff;
+    padding: 3px 15px;
+    margin-left: 15px;
+    border-radius: 20px;
+}
+a.findZipcode{
+    position: absolute;
+    left: 320px;
+    top: 450px;
+}
+input#address1{
+    display: block;
+    margin: 0;
+
+}
+.labelAddress{
+    height: 80px;
+    line-height: 50px;
+}
+.labelAddress span{
+    display: block;
+    margin-top: 20px;
+}
+.tel_selct select{
+    width: 65px;
+    height: 25px;
+    position: relative;
+    top: 6px;
+    border-radius: 5px;
+    text-align: center;
+
+}
+.tel_selct input{
+    text-align: center;
+}
+.mail>label>span, .sms>label>span{
+    display: inline-block;
+    font-size: 1em;
+}
+
+.mail span, .sms span{
+    display: block;
+    margin-top: 15px;
+    font-size: 1.1em;
+}
+.btnJoinArea{
+    text-align: center;
+    margin: 40px 0 20px 0;
+}
+.btnJoinArea button{
+    font-family: "NanumEX";
+    font-size: 1.2em;
+    color: #fff;
+    padding: 8px 20px;
+    border: none;
+    margin: 0 5px;
+    border-radius: 3px;
+    letter-spacing: 1px;
+}
+.btnOk{
+    background: linear-gradient(to left, #5D5D5D 30%, #353535 100%);
+}
+.btnCancel{
+    background: linear-gradient(to right,  #5D5D5D 30%, #353535 100%);
+}
+/*meberArea 영역 종료*/
