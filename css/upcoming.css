@@ -67,12 +67,11 @@
 #btnNewMore{
     padding: 20px 80px;
     display: block;
-    margin: 50px auto;
+    margin: 15px auto;
     border: none;
-    background: #EAEAEA;
-    border-radius: 20px;
+    background: none;
     font-size: 2em;
-    letter-spacing: 8px;
+    letter-spacing: 7px;
 }
 
 #btnNewMore:hover{

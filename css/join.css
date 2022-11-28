@@ -1,7 +1,7 @@
 @charset "utf-8";
 /*meberArea 영역 시작*/
 fieldset{
-    margin-bottom: 5px;
+
 }
 #memberArea{
     width: 1024px;
@@ -17,14 +17,14 @@ fieldset{
     border-bottom: 2px solid #6F6F6F;
     padding-top: 30px;
     padding-bottom: 15px;
+ 
 }
 
 input[type="text"], input[type="password"], input[type="tel"], input[type="email"]{
     border:none;
     border-bottom: 1px solid #6F6F6F;
     position: relative;
-    height: 25px;
-
+    top: 6px
 }
 .formSign{
     text-align: right;
@@ -130,58 +130,48 @@ input[type="text"], input[type="password"], input[type="tel"], input[type="email
 }
 
 #joinForm input{
-    margin-top: 10px;
+    margin: 10px 0;
 }
 
 #joinForm input[type="radio"]{
     margin: 0;
 }
-
 a.idCheck, a.findZipcode{
     background-color: #1B1B1B;
     color: #fff;
     padding: 3px 15px;
-    margin-left: 8px;
+    margin-left: 15px;
     border-radius: 20px;
 }
 a.findZipcode{
     position: absolute;
-    left: 305px;
-    top: 393px;
+    left: 320px;
+    top: 450px;
 }
 input#address1{
     display: block;
+    margin: 0;
 
 }
-input#address2{
-    display: block;
-}
-
 .labelAddress{
-    height: 100px;
-    line-height: 100px;
+    height: 80px;
+    line-height: 50px;
 }
 .labelAddress span{
     display: block;
     margin-top: 20px;
 }
 .tel_selct select{
-    width: 55px;
-    height: 30px;
+    width: 65px;
+    height: 25px;
     position: relative;
     top: 6px;
     border-radius: 5px;
-    margin-right: 6px;
-}
-
-
-.tel_selct input{
-    width: 60px;
     text-align: center;
-    position: relative;
-    top: 6px;
-    margin: 0 6px;
-    
+
+}
+.tel_selct input{
+    text-align: center;
 }
 .mail>label>span, .sms>label>span{
     display: inline-block;
@@ -208,9 +198,9 @@ input#address2{
     letter-spacing: 1px;
 }
 .btnOk{
-    background: #5D5D5D;
+    background: linear-gradient(to left, #5D5D5D 30%, #353535 100%);
 }
 .btnCancel{
-    background: #8C8C8C;
+    background: linear-gradient(to right,  #5D5D5D 30%, #353535 100%);
 }
 /*meberArea 영역 종료*/

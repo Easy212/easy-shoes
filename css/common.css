@@ -1,9 +1,8 @@
+/*공통 CSS 작업*/
 @charset "utf-8";
 
-/*공통 CSS 작업*/
-
 /*초기화 작업*/
-html, body, div, header, section, footer, legend, ul, ol, li, dl, dt, dd, h1, h2, h3, p, select, option, fieldset{
+html, body, div, header, section, footer, legend, ul, ol, li, dl, dt, dd, h1, h2, h3, p, select, option{
     margin: 0;
     padding: 0;
 }
@@ -75,16 +74,18 @@ body{
 }
 
 /*전체적인 레이아웃*/
-header, #visual, #mainMenuArea, #footerInner{
-    width: 1024px;
+header, #visual, #mainMenuArea{
+    width: 1784px;
     margin: 0 auto;
     box-sizing: border-box; /*padding과 boder를 포함한 크기로 합침(패딩의 크기와 보더의 크기를 각각사용하지않음)*/
 }
+
 
 #contentsArea{
     width: 1024px;
     margin: 0 auto;
     box-sizing: border-box;
+
 }
 /*헤더 영역 시작*/
 header{
@@ -99,7 +100,7 @@ header{
     left: 16px;
 }
 .headerLogo img{
-    width: 140px;
+    width: 200px;
     height: 110px;
 }
 .infoLink{
@@ -110,7 +111,6 @@ header{
 .infoLink > li{
     display: inline-block;
     padding: 10px 0;
-    margin-right: 3px;
 }
 .infoLink > li a{
     font-size: 1.1em;
@@ -118,7 +118,7 @@ header{
 .infoLink a::before{
     content: ":";
     color: #000;
-    margin-right: 5px;
+    padding-right: 8px;
 }
 
 .infoLink a::before:hover{
@@ -132,26 +132,26 @@ header{
     float: right;
     position: relative;
     right: 50px;
-    height: 45px; 
+    height: 45px;
+    
 }
 
 .mainMenu > li{
     position: relative;
     background-color: #000;
-    border-radius: 20px;
-    padding: 0 7px;
-    margin-left: 10px;
+    padding: 0 10px;
 }
 .mainMenu li, .mainMenu a{
     display: inline-block;
 
 }
 .mainMenu > li > a{
-    font-size: 1.2em;
+    font-size: 1.4em;
     padding: 10px;
     margin: 0 15px;
     color: #fff;
     letter-spacing: 1px; /*자간 넓히기*/
+
 }
 
 
@@ -163,16 +163,18 @@ header{
 .mainMenu ul{
     position: absolute;
     z-index: 10;
+    
+    
 }
 .mainMenu ul a{
     padding: 8px 25px;
-    font-size: 1.2em;
-    text-shadow: 3px 2px 3px rgb(0, 0, 0, 0.3);
+    font-size: 1.3em;
+    text-shadow: 3px 2px 3px rgba(0, 0, 0, 0.3);                 
 }
 
 .mainMenu > li:last-child ul a{
     position: relative;
-    right: 23px;
+    right: 20px;
     white-space: nowrap;
 }
 
@@ -201,11 +203,13 @@ header{
 /*비쥬얼 영역 시작*/
 #visual{
     margin-top: 30px;
+    box-sizing: border-box;
     position: relative;
     overflow: hidden;
 }
 .main_img{
-    box-sizing: border-box;
+    margin: 0 auto;
+    width: 100%;
     height: 400px;
     white-space: nowrap;
     position: relative;
@@ -213,25 +217,24 @@ header{
 
 .main_img>img{
     display: inline-block;
-    width: 100%;
-    box-sizing: border-box;
+    width: 101%;
     height: 400px;
     
 }
 .left_control{
-    width: 50px;
-    height: 70px;
+    width: 70px;
+    height: 120px;
     position: absolute;
-    top: 170px;
+    top: 140px;
     left: 15px;
     cursor: pointer;
     
 }
 .right_control{
-    width: 50px;
-    height: 70px;
+    width: 60px;
+    height: 120px;
     position: absolute;
-    top: 170px;
+    top: 140px;
     right: 15px;
     cursor: pointer;
    
@@ -255,7 +258,7 @@ header{
 footer{
     font-family: "NotoSansKR_Regular";
     font-size: 0.8em;
-    background: #E7E7E7;
+    background-image: linear-gradient(to bottom, #c7c7c7 0%,#e6e6e6 70%, #fff 100%);
     padding: 15px 0;
     
 }
@@ -265,7 +268,7 @@ footer{
     background: #000;
     border-radius: 5px;
     padding-left: 10px;
-    margin: 5px 0 10px 0px;
+    margin: 5px 0 10px 0;
     display: inline-block;
     margin-left: 20px;
 }
@@ -288,9 +291,9 @@ footer{
 .callCenter{
     font-family: "StylishRegular";
     float: right;
-    font-size: 1.2em;
+    margin: 10px 50px 0 0;
+    font-size: 1.5em;
     line-height: 1.8;
-    margin-top: 25px;
 }
 
 address{
